@@ -5,7 +5,7 @@ export interface IntroProps {
   age: number;
 }
 
-const Intro = ({ name, age }: IntroProps) => {
+const Intro = ({ name, age, bage }: IntroProps) => {
   return (
     <p>
       hey {name}, {age}. Test husky

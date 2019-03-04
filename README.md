@@ -1,8 +1,10 @@
-Starter для проектов на react (в основе create-react-app)
+Starter для проектов на react (в основе create-react-app).
+
+Данная ветка содержит [TypeScript](https://www.typescriptlang.org/index.html) версию.
 
 ## Добавлено:
 
-+ pre-commit hook (проверка eslint, форматирование prettier)
++ pre-commit hook (проверка tslint, форматирование prettier)
 
 ---
 
