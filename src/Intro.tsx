@@ -8,7 +8,7 @@ export interface IntroProps {
 const Intro = ({ name, age }: IntroProps) => {
   return (
     <p>
-      hey {name}, {age}
+      hey {name}, {age}. Test husky
     </p>
   )
 }
