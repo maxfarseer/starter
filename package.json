@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "precommit": "lint-staged",
     "tslint": "node_modules/.bin/tslint -p tsconfig.json",
-    "typecheck": "node_modules/.bin/tsc --noEmit --jsx preserve"
+    "typecheck": "tsc -p tsconfig.json"
   },
   "browserslist": [
     ">0.2%",
@@ -35,19 +35,16 @@
     "tslint-confifufg-prettier": "^1.18.0",
     "tslint-react": "^3.6.0"
   },
-  "lint-staged": 
-    {
-      "src/**/*.tsx": [
-        "npm run typecheck",
-        "tslint",
-        "prettier --write",
-        "git add"
-      ]
-    }
-  ,
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint",
+      "prettier --write",
+      "git add"
+    ]
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run precommit"
+      "pre-commit": "yarn run typecheck && yarn run precommit"
     }
   }
 }
