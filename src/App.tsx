@@ -1,6 +1,5 @@
-import React from 'react'
-
 import { Intro } from './Intro'
+import React from 'react'
 
 import './App.css'
 
