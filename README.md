@@ -5,6 +5,7 @@ Starter для проектов на react (в основе create-react-app).
 ## Добавлено:
 
 + pre-commit hook (проверка tslint, форматирование prettier)
++ [reach-router](https://reach.tech/router)
 
 ---
 
