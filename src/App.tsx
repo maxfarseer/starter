@@ -1,13 +1,14 @@
 import * as React from 'react'
 
 import { Link, Router } from '@reach/router'
+import { RouteComponentProps } from '@reach/router'
 
 import { About } from './pages/About'
 import { Home } from './pages/Home'
 
 import './App.css'
 
-const App = ({ children }: any) => {
+const App: React.FC<RouteComponentProps> = ({ children }) => {
   return (
     <div className="container">
       <h1>TS starter with stuff</h1>
